@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/calculadora.css">
+
+  <title>Calculadora de Frete</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FRENET</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="consulta.html">Consulta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="atualizacao.html">Atualização</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exclusao.html">Exclusão</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculadora.html">Calculadora de Frete</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="text-center">Calculadora de Frete</h1>
+
+    <form id="freightForm">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="zipCodeSourceInput">CEP de origem:</label>
+            <input type="text" class="form-control" id="zipCodeSourceInput" placeholder="Informe o CEP de origem">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="zipCodeDestinationInput">CEP de destino:</label>
+            <input type="text" class="form-control" id="zipCodeDestinationInput" placeholder="Informe o CEP de destino">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="weightInput">Peso (em gramas):</label>
+            <input type="number" class="form-control" id="weightInput" placeholder="Informe o peso em gramas">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="widthInput">Largura (em centímetros):</label>
+            <input type="number" class="form-control" id="widthInput" placeholder="Informe a largura em centímetros">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="heightInput">Altura (em centímetros):</label>
+            <input type="number" class="form-control" id="heightInput" placeholder="Informe a altura em centímetros">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="lengthInput">Comprimento (em centímetros):</label>
+            <input type="number" class="form-control" id="lengthInput" placeholder="Informe o comprimento em centímetros">
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary btn-block">Calcular</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="resultContainer" style="display: none;">
+      <h3 class="text-center mt-4">Resultados:</h3>
+      <div id="resultList" class="mt-4"></div>
+    </div>
+  </div>
+
+  <script src="js/calculadora.js"></script>
+</body>
+
+</html>

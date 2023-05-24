@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+  <title>Cadastro de Usuário</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">FRENET</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="consulta.html">Consulta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="atualizacao.html">Atualização</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exclusao.html">Exclusão</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculadora.html">Calculadora de Frete</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <h1 class="mb-4">Cadastro de Usuário</h1>
+    <form id="cadastroForm">
+      <div class="form-group">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" class="form-control" id="username" placeholder="Digite o nome de usuário">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName">Nome:</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Digite o primeiro nome">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastName">Sobrenome:</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Digite o último nome">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" class="form-control" id="email" placeholder="Digite o e-mail">
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" class="form-control" id="password" placeholder="Digite a senha">
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="text" class="form-control" id="phone" placeholder="Digite o telefone">
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Cor de fundo do formulário */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ced4da; /* Cor da borda dos campos */
+}
+
+
+#resultContainer {
+  margin-top: 20px;
+}
+
+#resultList {
+  padding: 10px;
+  background-color: #f8f9fa; /* Cor de fundo dos resultados */
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
