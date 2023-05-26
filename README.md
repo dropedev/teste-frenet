@@ -2,10 +2,10 @@
 Este projeto foi desenvolvido como parte de um teste para o processo seletivo da Frenet. O objetivo era criar uma aplicação web que incluísse funcionalidades como cadastro de usuários, consulta, atualização, exclusão e uma calculadora de frete.
 
 ## Tecnologias Utilizadas
-## HTML5
-## CSS3
-## Bootstrap 
-## JavaScript (Vanilla)
+ HTML5
+ CSS3
+ Bootstrap 
+ JavaScript (Vanilla)
 
 ## Descrição do Projeto
 O projeto consiste em uma aplicação web com as seguintes páginas:
