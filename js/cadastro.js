@@ -19,7 +19,7 @@ function handleSubmit(event) {
     email: email,
     password: password,
     phone: phone,
-    userStatus: 0 // Valor padrão
+    userStatus: 2 // Valor padrão
   };
 
   // Envia a requisição POST para a API
@@ -33,7 +33,17 @@ function handleSubmit(event) {
     .then(response => response.json())
     .then(data => {
       console.log('Usuário cadastrado com sucesso:', data);
-      // Lógica adicional aqui, como redirecionar para outra página ou exibir uma mensagem de sucesso
+
+      // Exibe a mensagem de sucesso
+      alert('Usuário cadastrado com sucesso!');
+
+      // Limpa os valores dos campos de entrada
+      document.getElementById('username').value = '';
+      document.getElementById('firstName').value = '';
+      document.getElementById('lastName').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('phone').value = '';
     })
     .catch(error => {
       console.error('Erro ao cadastrar usuário:', error);

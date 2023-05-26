@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/consulta.css">
   <title>Consulta de Usuário</title>
@@ -27,12 +28,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="consulta.html">Consulta</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="atualizacao.html">Atualização</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="exclusao.html">Exclusão</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="calculadora.html">Calculadora de Frete</a>
@@ -59,9 +54,10 @@
           <th>Nome</th>
           <th>E-mail</th>
           <th>Telefone</th>
+          <th></th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="userTableBody">
         <!-- Os dados dos usuários serão preenchidos dinamicamente aqui -->
       </tbody>
     </table>
